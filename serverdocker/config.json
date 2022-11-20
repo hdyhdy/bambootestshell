@@ -1,0 +1,50 @@
+{
+  "address": {
+    "1": "tcp://172.18.0.2:3735",
+    "2": "tcp://172.18.0.3:3736",
+    "3": "tcp://172.18.0.4:3737",
+    "4": "tcp://172.18.0.5:3738"
+  },
+  "http_address": {
+    "1": "http://172.18.0.2:8070",
+    "2": "http://172.18.0.3:8071",
+    "3": "http://172.18.0.4:8072",
+    "4": "http://172.18.0.5:8073"
+  },
+  "policy": "majority",
+  "threshold": 3,
+  "byzNo": 0,
+  "strategy": "fork",
+  "thrifty": false,
+  "chan_buffer_size": 128,
+  "buffer_size": 10240,
+  "multiversion": false,
+  "timeout": 500,
+  "bsize": 400,
+  "payload_size": 128,
+  "delta": 1,
+  "hasher": "sha3_256",
+  "signer": "ECDSA_P256",
+  "pprof": false,
+  "maxRound": 5000,
+  "master": "4",
+  "benchmark": {
+    "T": 600,
+    "N": 0,
+    "K": 1000,
+    "W": 0.5,
+    "Throttle": 100,
+    "Concurrency": 10,
+    "Distribution": "uniform",
+    "LinearizabilityCheck": false,
+    "Conflicts": 0,
+    "Min": 0,
+    "Mu": 500,
+    "Sigma": 50,
+    "Move": false,
+    "Speed": 10,
+    "Zipfian_s": 2,
+    "Zipfian_v": 1,
+    "Lambda": 0.01
+  }
+}
