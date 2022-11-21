@@ -6,6 +6,8 @@ COPY config.json /home/
 COPY start.sh /home/
 COPY run.sh /home/
 COPY ips.txt /home/
+RUN chmod +777 ./server
+RUN chmod +777 ./start.sh
 RUN apt-get update \
     && apt-get install -y iproute2 && apt-get install net-tools -y
 #RUN /home/run.sh
