@@ -5,6 +5,8 @@ COPY client /home/
 COPY config.json /home/
 COPY runClient.sh /home/
 COPY ips.txt /home/
+RUN chmod +777 ./client
+RUN chmod +777 ./runClient.sh
 RUN apt-get update \
     && apt-get install -y iproute2 && apt-get install net-tools -y
 WORKDIR /home/
